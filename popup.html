@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Text-To-Speech Service</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta name="description" content="Tool that will convert quora answers into voice">
+		<meta name="keywords" content="Quora, Quora Reader, Text to Speech">
+		<meta name="author" content="Khalid Ansari">
+		<meta name="copyright" content="Khalid">
+		<script src="popup.js"></script>
+		<link href="popup.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+
+		<div data-role="page" id="header">
+			<div data-role="header" class="header">
+				<center>
+					<h1 class="h-header">Quora Reader</h1>
+				</center>
+			</div>
+
+			<div role="main" class="ui-content">
+
+			  <div class"st-msg" id='statusMsg'></div>
+
+			  <div class="option voption">
+					<div class="cl-range-label">
+			  		<label for="rate">Voice</label>
+					</div>
+					<div class="cl-range-input">
+						<select id="voice" name="voice" class="select-style">
+							<option value="native" selected="">Please Select Voice</option>
+					</select>
+					</div>
+				</div>
+
+			  <div class="option">
+					<div class="cl-range-label">
+						<label for="rate">Rate</label>
+					</div>
+					<div class="cl-range-input">
+						<input type="range" min="0.1" max="10" step="0.1" name="rate" id="rate" value="1">
+					</div>
+				</div>
+
+			  <div class="option">
+					<div class="cl-range-label">
+						<label for="pitch">Pitch</label>
+					</div>
+					<div class="cl-range-input">
+						<input type="range" min="0" max="2" step="0.1" name="pitch" id="pitch" value="1">
+					</div>
+			  </div>
+			</div>
+
+			<div data-role="footer">
+				  <center>
+						<input type="submit" id="check_sub" name="check_sub" class="sub-mit" value="Submit" />
+					</center>
+			</div>
+			<div>
+				<center>
+					<p class="feedback" >Please write a mail you find some issue at <a href="mailto:khalidansari1002@gmail.com?subject=feedback">khalidansari1002@gmail.com</a></p>
+				</center>
+			</div>
+		</div>
+
+
+	</body>
+</html>
